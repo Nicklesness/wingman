@@ -48,8 +48,8 @@
     background-size: cover; background-position: center;
     backface-visibility: hidden;
   }
-  .card-front { background-image: url('https://cardswingmen.space/images/card.jpg'); }
-  .card-back { background-image: url('https://cardswingmen.space/images/card2.jpg'); transform: rotateY(180deg); }
+  .card-front { background-image: url('./images/card.jpg'); }
+  .card-back { background-image: url('./images/card2.jpg'); transform: rotateY(180deg); }
   .text-section {
     position: fixed; opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
@@ -148,8 +148,8 @@
   .m-card-wrap { width: 300px; height: 200px; perspective: 800px; margin: 0 auto 20px; }
   .m-card-inner { width: 100%; height: 100%; transform-style: preserve-3d; animation: mFlip 8s ease-in-out infinite; will-change: transform; }
   .m-card-face { position: absolute; width: 100%; height: 100%; border-radius: 12px; backface-visibility: hidden; background-size: contain; background-position: center; background-repeat: no-repeat; overflow: hidden; }
-  .m-card-front { background-image: url('https://cardswingmen.space/images/card.jpg'); box-shadow: 0 16px 48px rgba(253,194,2,0.15), 0 6px 20px rgba(0,0,0,0.5); }
-  .m-card-back { background-image: url('https://cardswingmen.space/images/card2.jpg'); transform: rotateY(180deg); box-shadow: 0 16px 48px rgba(253,194,2,0.15), 0 6px 20px rgba(0,0,0,0.5); }
+  .m-card-front { background-image: url('./images/card.jpg'); box-shadow: 0 16px 48px rgba(253,194,2,0.15), 0 6px 20px rgba(0,0,0,0.5); }
+  .m-card-back { background-image: url('./images/card2.jpg'); transform: rotateY(180deg); box-shadow: 0 16px 48px rgba(253,194,2,0.15), 0 6px 20px rgba(0,0,0,0.5); }
   .m-card-shine { position: absolute; inset: 0; border-radius: 12px; background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.12) 45%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.12) 55%, transparent 70%); pointer-events: none; animation: mShine 8s ease-in-out infinite; z-index: 2; }
   @keyframes mFlip {
     0% { transform: rotateY(0deg) rotateX(3deg) translateY(0); }
@@ -372,9 +372,9 @@
         <p class="m-section-text">Everything starts with the community. Each card is unique — 3000 collectible NFTs that grant access to the Wingmen universe.</p>
         <div class="m-nft-showcase">
           <div class="m-nft-cards">
-            <div class="m-nft-card"><img src="https://cardswingmen.space/images/card.jpg" alt="NFT Card"></div>
-            <div class="m-nft-card"><img src="https://cardswingmen.space/images/card.jpg" alt="NFT Card"></div>
-            <div class="m-nft-card"><img src="https://cardswingmen.space/images/card.jpg" alt="NFT Card"></div>
+            <div class="m-nft-card"><img src="./images/card.jpg" alt="NFT Card"></div>
+            <div class="m-nft-card"><img src="./images/card.jpg" alt="NFT Card"></div>
+            <div class="m-nft-card"><img src="./images/card.jpg" alt="NFT Card"></div>
           </div>
           <div class="m-nft-counter-row">
             <span class="m-nft-counter-num" id="nftCounter">0</span>

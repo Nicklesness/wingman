@@ -28,7 +28,7 @@
     min-height: 100vh; display: flex; align-items: center; justify-content: center;
     padding: 40px; position: relative; flex-direction: column; gap: 30px;
     background: linear-gradient(to bottom, rgb(0,0,0), rgba(0,0,0,0)),
-                url('https://cardswingmen.space/images/utilitybg.png');
+                url('./images/utilitybg.png');
     background-size: cover; background-position: center; background-repeat: no-repeat;
   }
   .card-wrap { position: relative; width: var(--card-size); height: var(--card-size);
@@ -82,7 +82,7 @@
   /* Mobile utility styles */
   .m-util-hero { padding: 70px 24px 30px; text-align: center;
     background: linear-gradient(180deg, rgba(0,0,0,0.6), #0b0b0b),
-                url('https://cardswingmen.space/images/utilitybg.png') center/cover no-repeat;
+                url('./images/utilitybg.png') center/cover no-repeat;
     min-height: 50vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
   }
   .m-util-title { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: #ffd200; letter-spacing: 0.1em; margin-bottom: 8px; }
@@ -90,8 +90,8 @@
   .m-util-card { width: 280px; height: 190px; perspective: 800px; margin: 24px auto; }
   .m-util-card-inner { width: 100%; height: 100%; transform-style: preserve-3d; animation: mUtilFlip 8s ease-in-out infinite; }
   .m-util-card-face { position: absolute; width: 100%; height: 100%; border-radius: 12px; backface-visibility: hidden; background-size: contain; background-position: center; background-repeat: no-repeat; overflow: hidden; }
-  .m-util-card-front { background-image: url('https://cardswingmen.space/images/card.jpg'); box-shadow: 0 16px 48px rgba(253,194,2,0.15), 0 6px 20px rgba(0,0,0,0.5); }
-  .m-util-card-back { background-image: url('https://cardswingmen.space/images/card2.jpg'); transform: rotateY(180deg); box-shadow: 0 16px 48px rgba(253,194,2,0.15), 0 6px 20px rgba(0,0,0,0.5); }
+  .m-util-card-front { background-image: url('./images/card.jpg'); box-shadow: 0 16px 48px rgba(253,194,2,0.15), 0 6px 20px rgba(0,0,0,0.5); }
+  .m-util-card-back { background-image: url('./images/card2.jpg'); transform: rotateY(180deg); box-shadow: 0 16px 48px rgba(253,194,2,0.15), 0 6px 20px rgba(0,0,0,0.5); }
   .m-util-shine { position: absolute; inset: 0; border-radius: 12px; background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.12) 45%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.12) 55%, transparent 70%); pointer-events: none; animation: mUtilShine 8s ease-in-out infinite; z-index: 2; }
   @keyframes mUtilFlip {
     0% { transform: rotateY(0deg) rotateX(3deg) translateY(0); }
@@ -144,7 +144,7 @@
   <div class="stage">
     <div class="card-wrap" id="cardWrap">
       <div class="ring"></div>
-      <div class="card"><img src="https://cardswingmen.space/images/card.jpg" alt="Card"></div>
+      <div class="card"><img src="./images/card.jpg" alt="Card"></div>
       <button class="icon pos-top animate" data-info="The card empowers the community by bringing members together as a family, with each member receiving both an NFT and a physical card that unlocks exclusive privileges and opportunities." style="animation-delay:0.15s"><i class="fa-solid fa-heart"></i></button>
       <button class="icon pos-right1 animate" data-info="A card is required to claim any newly released gifts or IRL items, allowing the item's price to be reduced to $0." style="animation-delay:0.30s"><i class="fa-solid fa-gift"></i></button>
       <button class="icon pos-right2 animate" data-info="Cardholders have the privilege to submit requests for roles as actors or for any other positions, with their applications receiving priority consideration." style="animation-delay:0.45s"><i class="fa-solid fa-film"></i></button>
